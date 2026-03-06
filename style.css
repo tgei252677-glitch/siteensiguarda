@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    height: 45px;
+  }
+  
+
+  
+  .logo-text strong {
+    font-size: 16px;
+    color: #1b6f8c;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .menu a:hover {
+    color: #1b6f8c;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 8px 14px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .btn-blue {
+    background: #1b6f8c;
+  }
+  
+  .btn-green {
+    background: #2aa876;
+  }
+  
+  .btn-lime {
+    background: #8bc34a;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.courses {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.courses h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.course {
+    position: relative;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.course span {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Imagens de fundo (exemplos) */
+.communication {
+    background-image: url("comunicação.png");
+}
+
+.informatica {
+    background-image: url("Informatica.png");
+}
+
+.multimedia {
+    background-image: url("multimedia.png");
+}
+
+.saude {
+    background-image: url("saude.png");
+}
+
+.mecanica {
+    background-image: url("mecanica.png");
+}
+
+/* Responsivo */
+@media (max-width: 1000px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}
