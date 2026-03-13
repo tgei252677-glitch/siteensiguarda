@@ -1,357 +1,188 @@
-<!DOCTYPE html>
-<html lang="pt">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Escola Profissional - ensiguarda</title>
+<meta name="auhtor" content="Mateus Vicente">
+<meta name="Description" content="Site da Ensiguarda">
 
-<style>
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f2f2f2;
-}
-
-/* MENU */
-
-header{
-background:white;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:15px 40px;
-}
-
-nav a{
-margin:0 10px;
-text-decoration:none;
-color:#444;
-font-weight:bold;
-}
-
-.logo img{
-height:50px;
-}
-
-/* BOTÕES */
-
-.botoes button{
-border:none;
-padding:10px 18px;
-margin-left:10px;
-border-radius:20px;
-color:white;
-cursor:pointer;
-}
-
-.inscricao{background:#0f8a8a;}
-.alojamento{background:#1abc9c;}
-.avaliacao{background:#7dbd2f;}
-
-/* TITULO */
-
-.titulo{
-text-align:center;
-margin:40px 0;
-font-size:30px;
-font-weight:bold;
-}
-
-/* CURSOS */
-
-.cursos{
-display:grid;
-grid-template-columns: repeat(5, 1fr);
-gap:10px;
-padding:0 40px;
-}
-
-.curso img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-/* EMPREGOS */
-
-.empregos{
-margin:60px 40px;
-text-align:center;
-}
-
-.empregos img{
-width:100%;
-max-height:350px;
-object-fit:cover;
-}
-
-.empregos button{
-margin-top:20px;
-padding:10px 20px;
-border:none;
-background:#4aa3a3;
-color:white;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* NOTICIAS */
-
-.noticias{
-padding:60px 40px;
-}
-
-.noticias-container{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-}
-
-.noticia{
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.noticia img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.noticia-conteudo{
-padding:20px;
-text-align:center;
-}
-
-.noticia h3{
-font-size:20px;
-}
-
-.noticia p{
-font-size:14px;
-color:#666;
-}
-
-.lermais{
-display:inline-block;
-margin-top:15px;
-color:#0f8a8a;
-font-weight:bold;
-text-decoration:none;
-}
-
-/* TESTEMUNHOS */
-
-.testemunhos{
-margin-top:60px;
-text-align:center;
-position:relative;
-}
-
-.slider{
-position:relative;
-overflow:hidden;
-}
-
-.slide{
-display:none;
-}
-
-.slide img{
-width:100%;
-height:400px;
-object-fit:cover;
-}
-
-/* SETAS */
-
-.seta{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-font-size:40px;
-color:white;
-cursor:pointer;
-padding:10px;
-user-select:none;
-}
-
-.esquerda{
-left:20px;
-}
-
-.direita{
-right:20px;
-}
-
-</style>
+<title>Escola Profissional - Ensiguarda</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+<div class="container">
+<a class="navbar-brand" href="#">
+<img src="res/Ativo-1-1024x272.png" class="logo">
+</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-<header>
+<div class="collapse navbar-collapse" id="menu">
 
-<div class="logo">
-<img src="Ativo-1-1024x272.png">
-</div>
+<ul class="navbar-nav me-auto">
 
-<nav>
-<a href="#">Escola</a>
-<a href="#">Informações</a>
-<a href="#">Instalações</a>
-<a href="#">Contactos</a>
-</nav>
+<li class="nav-item">
+<a class="nav-link" href="#">Escola</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Informações</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Instalações</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contactos</a>
+</li>
+
+</ul>
 
 <div class="botoes">
-<button class="inscricao">INSCRIÇÃO</button>
-<button class="alojamento">ALOJAMENTO</button>
-<button class="avaliacao">AVALIAÇÃO EXTERNA IGEC</button>
-</div>
 
-</header>
-
-<div class="titulo">
-OS NOSSOS CURSOS, A TUA ESCOLHA!
-</div>
-
-<div class="cursos">
-
-<div class="curso">
-<img src="comunicação.png">
-</div>
-
-<div class="curso">
-<img src="Informatica.png">
-</div>
-
-<div class="curso">
-<img src="mecanica.png">
-</div>
-
-<div class="curso">
-<img src="multimedia.png">
-</div>
-
-<div class="curso">
-<img src="saude.png">
-</div>
+<button class="btn inscricao">INSCRIÇÃO</button>
+<button class="btn alojamento">ALOJAMENTO</button>
+<button class="btn avaliacao">AVALIAÇÃO EXTERNA IGEC</button>
 
 </div>
 
-<div class="empregos">
+</div>
+</div>
+</nav>
+<div class="container text-center mt-5">
+<h2 class="titulo">OS NOSSOS CURSOS, A TUA ESCOLHA!</h2>
+</div>
+<div class="container mt-4">
+<div class="row g-3">
+<div class="col-md-2">
+<img src="res/comunicação.png" class="img-fluid curso-img">
+</div>
+<div class="col-md-2">
+<img src="res/Informatica.png" class="img-fluid curso-img">
+</div>
 
+<div class="col-md-2">
+<img src="res/mecanica.png" class="img-fluid curso-img">
+</div>
+
+<div class="col-md-2">
+<img src="res/multimedia.png" class="img-fluid curso-img">
+</div>
+
+<div class="col-md-2">
+<img src="res/saude.png" class="img-fluid curso-img">
+</div>
+
+</div>
+</div>
+<div class="container text-center mt-5">
 <h2>O SUCESSO CONTINUA: OPORTUNIDADES DE EMPREGO</h2>
-
-<img src="JOB.jpg">
-
-<br>
-
-<button>Consultar ofertas</button>
-
+<img src="res/JOB.jpg" class="img-fluid empregos-img">
+<br><br>
+<button class="btn btn-success">Consultar ofertas</button>
 </div>
+<div class="container noticias mt-5">
 
-<!-- NOTICIAS -->
+<div class="row g-4">
 
-<div class="noticias">
+<div class="col-md-4">
 
-<div class="noticias-container">
+<div class="card noticia">
 
-<div class="noticia">
-<img src="Homenagem3-300x200.jpeg">
-<div class="noticia-conteudo">
-<h3>Homenagem ao Professor João Bento Raimundo</h3>
-<p>
+<img src="res/Homenagem3-300x200.jpeg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Homenagem ao Professor João Bento Raimundo</h5>
+
+<p class="card-text">
 Homenagem ao Professor João Bento Raimundo no âmbito das celebrações dos 50 anos do Sindicato dos Professores da Zona Centro.
 </p>
+
 <a href="#" class="lermais">LER MAIS ></a>
+
+</div>
 </div>
 </div>
 
-<div class="noticia">
-<img src="LetrasArtes_01-300x225.jpeg">
-<div class="noticia-conteudo">
-<h3>“Letras e Artes” 2025</h3>
-<p>
+
+<div class="col-md-4">
+
+<div class="card noticia">
+
+<img src="res/LetrasArtes_01-300x225.jpeg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">“Letras e Artes” 2025</h5>
+
+<p class="card-text">
 Evento dedicado à literatura e arte com a presença de professores e convidados especiais.
 </p>
+
 <a href="#" class="lermais">LER MAIS ></a>
+
+</div>
 </div>
 </div>
 
-<div class="noticia">
-<img src="portugues.jpg">
-<div class="noticia-conteudo">
-<h3>Português para alunos estrangeiros</h3>
-<p>
+
+<div class="col-md-4">
+
+<div class="card noticia">
+
+<img src="res/portugues.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Português para alunos estrangeiros</h5>
+
+<p class="card-text">
 A Escola Profissional da Guarda abre-se ao mundo com novas iniciativas para estudantes internacionais.
 </p>
+
 <a href="#" class="lermais">LER MAIS ></a>
+
+</div>
 </div>
 </div>
 
 </div>
 </div>
-
-<!-- TESTEMUNHOS -->
-
-<div class="testemunhos">
+<div class="container text-center mt-5">
 
 <h2>Testemunhos</h2>
 
-<div class="slider">
+<div id="carouselExample" class="carousel slide mt-4">
 
-<div class="slide">
-<img src="testemunha1.png">
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="res/testemunha1.png" class="d-block w-100">
 </div>
 
-<div class="slide">
-<img src="testemulha2.png">
+<div class="carousel-item">
+<img src="res/testemulha2.png" class="d-block w-100">
 </div>
 
-<div class="slide">
-<img src="testemulha3.png">
+<div class="carousel-item">
+<img src="res/testemulha3.png" class="d-block w-100">
 </div>
-
-</div>
-
-<div class="seta esquerda" onclick="mudarSlide(-1)">❮</div>
-<div class="seta direita" onclick="mudarSlide(1)">❯</div>
 
 </div>
 
-<script>
+<button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
 
-let slideIndex = 0;
-mostrarSlide();
+<button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
 
-function mudarSlide(n){
-slideIndex += n;
-mostrarSlide();
-}
-
-function mostrarSlide(){
-
-let slides = document.getElementsByClassName("slide");
-
-if(slideIndex >= slides.length){
-slideIndex = 0;
-}
-
-if(slideIndex < 0){
-slideIndex = slides.length - 1;
-}
-
-for(let i=0;i<slides.length;i++){
-slides[i].style.display="none";
-}
-
-slides[slideIndex].style.display="block";
-
-}
-
-</script>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
